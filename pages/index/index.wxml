@@ -1,15 +1,6 @@
-<!--index.wxml-->
-<import src="/zanui/field/index.wxml" />
-<scroll-view scroll-y="true">
-   <view class="zan-panel">
-    <view class="zan-cell" bindtap="redirect" data-id="1">
-      <checkbox value="1"/><view class="zan-cell__bd">多行列表</view>
-    </view>
-    <view class="zan-cell">
-      <checkbox value="1"/><view class="zan-cell__bd">多行列表</view>
-    </view>
-    <view class="zan-cell">
-      <checkbox value="1"/><view class="zan-cell__bd">多行列表</view>
-    </view>
-  </view>
-</scroll-view>
+<import src="path/to/zanui-weapp/dist/loadmore/index.wxml" />
+<!-- 直接使用 zan-loadmore 模板，并且直接传入设置值 -->
+ <view class="zan-loadmore">
+  <view class="zan-loading"></view>
+  <view class="zan-loadmore__tips">加载中...</view>
+</view>

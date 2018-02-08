@@ -1,3 +1,4 @@
+const config = require('../config')
 const formatTime = date => {
   const year = date.getFullYear()
   const month = date.getMonth() + 1
@@ -15,7 +16,7 @@ const formatNumber = n => {
 }
 
 const getApi = (url) => {
-  return 'http://laravel-admin.com/api/login'
+  return (config.debug ? config.dev_api_url : config.api_url) + url
 }
 
 module.exports = {
